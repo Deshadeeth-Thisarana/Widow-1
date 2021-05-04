@@ -20,7 +20,7 @@ Updates channel as at [HiTechRocket](https://t.me/HiTechRocket)
 ## How to setup on Heroku 
 For starters click on this button 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prabhasha-p/Lyci) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/deshadeeth-thisarana/Widow-1) 
 
 ## Credits
 The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
