@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = "Hi {}, my name is {} 👸\n\nI'm a Powerful group manager bot With Cool Modules. Made by [𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖 ••• 🇱🇰](t.me/Prabha_sha)\n\nHit /help to find my list of available commands"
+PM_START_TEXT = "Hi {}, my name is {} \n\nI'm a Powerful group manager bot With Cool Modules. Made by [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ🇱🇰](t.me/Deshadeeth-Thisarana)\n\nHit /help to find my list of available commands"
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
@@ -95,9 +95,9 @@ I'm a Powerful group management bot, here to help you get around and keep the or
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n",
 )
 
-Lyci_IMG = "https://telegra.ph/file/e49146459099415d48157.jpg"
+Lyci_IMG = "https://telegra.ph/file/39500bb2a6205ecc98807.jpg"
 
-DONATE_STRING = """Hey, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖 •••](t.me/Prabha_sha) 🥺💔"""
+DONATE_STRING = """Hey, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) 🥺💔"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -182,7 +182,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
                     ),
                 )
             elif args[0].lower() == "markdownhelp":
@@ -214,8 +214,8 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="➕ Add Lyci to your Group",
-                                url="t.me/{}?startgroup=true".format(
+                                text="➕ Add Widow to your Group",
+                                url="t.me/{}?startgroup=start".format(
                                     context.bot.username
                                 ),
                             )
@@ -223,21 +223,17 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="👥 Support Group",
-                                url=f"https://t.me/GalaxyLanka",
+                                url=f"https://t.me/GangOfFriends",
                             ),
                             InlineKeyboardButton(
                                 text="📌 Updates Channel",
-                                url="https://t.me/GalaxyLanka",
+                                url="https://t.me/GangOfFriendschannel",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Soure Code 📕",
-                                url=f"https://github.com/prabhasha-p/Lyci",
-                            ),
-                            InlineKeyboardButton(
                                 text="Developer 🇱🇰",
-                                url="https://t.me/Prabha_sha",
+                                url="https://t.me/DeshadeethThisarana",
                             ),
                         ],
                     ]
@@ -296,7 +292,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "Here is the help for the *{}* module:\n".format(
+                "⚊❮❮❮❮ ｢Help for the *{}* module」❯❯❯❯⚊\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -306,7 +302,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
                 ),
             )
 
@@ -390,7 +386,7 @@ def get_help(update: Update, context: CallbackContext):
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
         module = args[1].lower()
         text = (
-            "Here is the available help for the *{}* module:\n".format(
+            "⚊❮❮❮❮ ｢Here is the available help for the *{}* module」❯❯❯❯⚊\n".format(
                 HELPABLE[module].__mod_name__
             )
             + HELPABLE[module].__help__
@@ -399,7 +395,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙Back", callback_data="help_back")]]
             ),
         )
 
@@ -472,7 +468,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="🔙Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -576,7 +572,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1469528232 and DONATION_LINK:
+        if OWNER_ID != 1041727415 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
