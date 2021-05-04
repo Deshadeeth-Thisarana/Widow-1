@@ -95,7 +95,7 @@ I'm a Powerful group management bot, here to help you get around and keep the or
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !\n",
 )
 
-Lyci_IMG = "https://telegra.ph/file/39500bb2a6205ecc98807.jpg"
+Lyci_IMG = "https://telegra.ph/file/1841375214f76476bc0df.jpg"
 
 DONATE_STRING = """Hey, glad to hear you want to donate for developer. This bot runs on heroku so bot slow down some times and developer cannot add more modules due to heroku can't run them.\n\nBetter if my developer recieved a VPS to run the bot. Contact him and help him to continue this.\n\nDeveloper: [Đ€Ş卄ΔĐ€€Ť卄 Ť卄ĪŞΔŘคŇΔ](t.me/DeshadeethThisarana) 🥺💔"""
 
