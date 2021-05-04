@@ -1,5 +1,5 @@
 __help__ = """
-*Lyci - A Powerful Telegram Group Manager 🎶
+*Widow - A Powerful Telegram Group Manager 🎶
 
 Powerful Abilities*
 
@@ -10,7 +10,6 @@ Powerful Abilities*
 • Youtube Downloader 🎵
 
 Developer [𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖 •••](http://t.me/prabha_sha) 🇱🇰
-
-[GitHub](https://github.com/Prabhasha-p)"""
+"""
 
 __mod_name__ = "About 🇱🇰"
